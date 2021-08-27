@@ -1,5 +1,11 @@
 # data
 CASF-2016
 
+# results
+scoring/logs
+
 # archives
 *.tar.gz
+
+# singularity
+*.sif
