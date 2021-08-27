@@ -15,6 +15,13 @@ do
         -o results/${model}_Affinity \
         > analysis/${model}_Affinity.log
 
+    python ${scripts}/ranking_power.py \
+        -c ${data} \
+        -s results/${model}_Affinity.dat \
+        -p negative \
+        -o results/${model}_Affinity \
+        > analysis/${model}_Affinity.log
+
     for score in "CNNscore" "CNNaffinity"
     do
         echo "${model} ${score}"
