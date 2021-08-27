@@ -1,0 +1,3 @@
+[submodule "CASF-scripts"]
+	path = CASF-scripts
+	url = git@github.com:RMeli/CASF-scripts.git
