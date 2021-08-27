@@ -296,7 +296,7 @@ Template command for running the bootstrap in R program==========
 
 rm(list=ls());
 require(boot);
-data_all<-read.table("results/default_CNNscore_processed_score",header=FALSE);
+data_all<-read.table("results/scoring/default_CNNscore_processed_score",header=FALSE);
 aa<-c(1:nrow(data_all));
 
 mycore<-function(x,indices)
@@ -313,7 +313,7 @@ for(i in 1:284)
 };
 
 data.boot<-boot(aa,mycore,R=10000,stype="i",sim="ordinary");
-sink("results/default_CNNscore-ci.results");
+sink("results/scoring/default_CNNscore-ci.results");
 a<-boot.ci(data.boot,conf=0.9,type=c("bca"));
 print(a);
 sink();
