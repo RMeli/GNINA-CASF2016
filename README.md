@@ -1,6 +1,6 @@
 # Evaluation of GNINA on CASF-2016 Benchmark
 
-## Rewproducibility
+## Reproducibility
 
 ### Signularity
 
