@@ -1,0 +1,22 @@
+              _             
+             (_)            
+   __ _ _ __  _ _ __   __ _ 
+  / _` | '_ \| | '_ \ / _` |
+ | (_| | | | | | | | | (_| |
+  \__, |_| |_|_|_| |_|\__,_|
+   __/ |                    
+  |___/                     
+
+gnina v1.0.1 HEAD:aa41230   Built Aug 25 2021.
+gnina is based on smina and AutoDock Vina.
+Please cite appropriately.
+
+Commandline: gnina -l ../CASF-2016/coreset/2r9w/2r9w_ligand.mol2 -r ../CASF-2016/coreset/2r9w/2r9w_protein.pdb --autobox_ligand ../CASF-2016/coreset/2r9w/2r9w_ligand.mol2 --score_only --cnn general_default2018_ensemble
+## Name gauss(o=0,_w=0.5,_c=8) gauss(o=3,_w=2,_c=8) repulsion(o=0,_c=8) hydrophobic(g=0.5,_b=1.5,_c=8) non_dir_h_bond(g=-0.7,_b=0,_c=8) num_tors_div
+Affinity: -7.68007 (kcal/mol)
+CNNscore: 0.93913 
+CNNaffinity: 6.22354
+CNNvariance: 0.07115
+Intramolecular energy: -0.49577
+Term values, before weighting:
+## 2r9w_ligand 82.64059 1217.28796 4.17992 50.73106 4.15602 0.00000

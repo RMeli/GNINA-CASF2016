@@ -1,0 +1,22 @@
+              _             
+             (_)            
+   __ _ _ __  _ _ __   __ _ 
+  / _` | '_ \| | '_ \ / _` |
+ | (_| | | | | | | | | (_| |
+  \__, |_| |_|_|_| |_|\__,_|
+   __/ |                    
+  |___/                     
+
+gnina v1.0.1 HEAD:aa41230   Built Aug 25 2021.
+gnina is based on smina and AutoDock Vina.
+Please cite appropriately.
+
+Commandline: gnina -l ../CASF-2016/coreset/3kr8/3kr8_ligand.mol2 -r ../CASF-2016/coreset/3kr8/3kr8_protein.pdb --autobox_ligand ../CASF-2016/coreset/3kr8/3kr8_ligand.mol2 --score_only --cnn redock_default2018_ensemble
+## Name gauss(o=0,_w=0.5,_c=8) gauss(o=3,_w=2,_c=8) repulsion(o=0,_c=8) hydrophobic(g=0.5,_b=1.5,_c=8) non_dir_h_bond(g=-0.7,_b=0,_c=8) num_tors_div
+Affinity: -11.38582 (kcal/mol)
+CNNscore: 0.95131 
+CNNaffinity: 6.49185
+CNNvariance: 0.01442
+Intramolecular energy: -0.43364
+Term values, before weighting:
+## 3kr8_ligand 112.54368 1475.42017 3.08700 55.94924 2.95749 0.00000

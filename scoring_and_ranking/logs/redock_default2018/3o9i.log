@@ -1,0 +1,22 @@
+              _             
+             (_)            
+   __ _ _ __  _ _ __   __ _ 
+  / _` | '_ \| | '_ \ / _` |
+ | (_| | | | | | | | | (_| |
+  \__, |_| |_|_|_| |_|\__,_|
+   __/ |                    
+  |___/                     
+
+gnina v1.0.1 HEAD:aa41230   Built Aug 25 2021.
+gnina is based on smina and AutoDock Vina.
+Please cite appropriately.
+
+Commandline: gnina -l ../CASF-2016/coreset/3o9i/3o9i_ligand.mol2 -r ../CASF-2016/coreset/3o9i/3o9i_protein.pdb --autobox_ligand ../CASF-2016/coreset/3o9i/3o9i_ligand.mol2 --score_only --cnn redock_default2018_ensemble
+## Name gauss(o=0,_w=0.5,_c=8) gauss(o=3,_w=2,_c=8) repulsion(o=0,_c=8) hydrophobic(g=0.5,_b=1.5,_c=8) non_dir_h_bond(g=-0.7,_b=0,_c=8) num_tors_div
+Affinity: -9.75353 (kcal/mol)
+CNNscore: 0.99235 
+CNNaffinity: 8.86286
+CNNvariance: 0.01724
+Intramolecular energy: -2.15284
+Term values, before weighting:
+## 3o9i_ligand 140.09761 2244.30444 4.88723 53.75959 5.78989 0.00000

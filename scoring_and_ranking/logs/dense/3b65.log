@@ -1,0 +1,22 @@
+              _             
+             (_)            
+   __ _ _ __  _ _ __   __ _ 
+  / _` | '_ \| | '_ \ / _` |
+ | (_| | | | | | | | | (_| |
+  \__, |_| |_|_|_| |_|\__,_|
+   __/ |                    
+  |___/                     
+
+gnina v1.0.1 HEAD:aa41230   Built Aug 25 2021.
+gnina is based on smina and AutoDock Vina.
+Please cite appropriately.
+
+Commandline: gnina -l ../CASF-2016/coreset/3b65/3b65_ligand.mol2 -r ../CASF-2016/coreset/3b65/3b65_protein.pdb --autobox_ligand ../CASF-2016/coreset/3b65/3b65_ligand.mol2 --score_only --cnn dense_ensemble
+## Name gauss(o=0,_w=0.5,_c=8) gauss(o=3,_w=2,_c=8) repulsion(o=0,_c=8) hydrophobic(g=0.5,_b=1.5,_c=8) non_dir_h_bond(g=-0.7,_b=0,_c=8) num_tors_div
+Affinity: -9.89911 (kcal/mol)
+CNNscore: 0.99666 
+CNNaffinity: 7.94622
+CNNvariance: 0.23838
+Intramolecular energy: -0.22853
+Term values, before weighting:
+## 3b65_ligand 121.74319 1665.16272 3.02413 61.17746 2.43178 0.00000
