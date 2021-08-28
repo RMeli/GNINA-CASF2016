@@ -1,0 +1,19 @@
+              _             
+             (_)            
+   __ _ _ __  _ _ __   __ _ 
+  / _` | '_ \| | '_ \ / _` |
+ | (_| | | | | | | | | (_| |
+  \__, |_| |_|_|_| |_|\__,_|
+   __/ |                    
+  |___/                     
+
+gnina v1.0.1 HEAD:aa41230   Built Aug 25 2021.
+gnina is based on smina and AutoDock Vina.
+Please cite appropriately.
+
+Commandline: gnina -l ../CASF-2016/coreset/1nvq/1nvq_ligand.mol2 -r ../CASF-2016/coreset/1nvq/1nvq_protein.pdb --autobox_ligand ../CASF-2016/coreset/1nvq/1nvq_ligand.mol2 --minimize --cnn dense_ensemble --seed 42
+Affinity: -14.02220  -0.34526 (kcal/mol)
+RMSD: 0.24489
+CNNscore: 0.99874 
+CNNaffinity: 7.94265
+CNNvariance: 0.06029

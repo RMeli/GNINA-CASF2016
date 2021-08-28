@@ -1,0 +1,22 @@
+              _             
+             (_)            
+   __ _ _ __  _ _ __   __ _ 
+  / _` | '_ \| | '_ \ / _` |
+ | (_| | | | | | | | | (_| |
+  \__, |_| |_|_|_| |_|\__,_|
+   __/ |                    
+  |___/                     
+
+gnina v1.0.1 HEAD:aa41230   Built Aug 25 2021.
+gnina is based on smina and AutoDock Vina.
+Please cite appropriately.
+
+Commandline: gnina -l ../CASF-2016/coreset/3p5o/3p5o_ligand_opt.mol2 -r ../CASF-2016/coreset/3p5o/3p5o_protein.pdb --autobox_ligand ../CASF-2016/coreset/3p5o/3p5o_ligand_opt.mol2 --score_only --cnn crossdock_default2018_ensemble --seed 42
+## Name gauss(o=0,_w=0.5,_c=8) gauss(o=3,_w=2,_c=8) repulsion(o=0,_c=8) hydrophobic(g=0.5,_b=1.5,_c=8) non_dir_h_bond(g=-0.7,_b=0,_c=8) num_tors_div
+Affinity: -8.72952 (kcal/mol)
+CNNscore: 0.95218 
+CNNaffinity: 7.05941
+CNNvariance: 0.00699
+Intramolecular energy: -0.40199
+Term values, before weighting:
+## 3p5o_ligand 79.74216 1304.77612 0.88416 60.22241 0.59164 0.00000

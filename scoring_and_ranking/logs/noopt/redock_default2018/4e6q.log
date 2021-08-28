@@ -11,7 +11,7 @@ gnina v1.0.1 HEAD:aa41230   Built Aug 25 2021.
 gnina is based on smina and AutoDock Vina.
 Please cite appropriately.
 
-Commandline: gnina -l ../CASF-2016/coreset/4e6q/4e6q_ligand.mol2 -r ../CASF-2016/coreset/4e6q/4e6q_protein.pdb --autobox_ligand ../CASF-2016/coreset/4e6q/4e6q_ligand.mol2 --score_only --cnn redock_default2018_ensemble
+Commandline: gnina -l ../CASF-2016/coreset/4e6q/4e6q_ligand.mol2 -r ../CASF-2016/coreset/4e6q/4e6q_protein.pdb --autobox_ligand ../CASF-2016/coreset/4e6q/4e6q_ligand.mol2 --score_only --cnn redock_default2018_ensemble --seed 42
 ## Name gauss(o=0,_w=0.5,_c=8) gauss(o=3,_w=2,_c=8) repulsion(o=0,_c=8) hydrophobic(g=0.5,_b=1.5,_c=8) non_dir_h_bond(g=-0.7,_b=0,_c=8) num_tors_div
 Affinity: -8.92269 (kcal/mol)
 CNNscore: 0.97149 

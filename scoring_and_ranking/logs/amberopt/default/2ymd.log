@@ -1,0 +1,21 @@
+              _             
+             (_)            
+   __ _ _ __  _ _ __   __ _ 
+  / _` | '_ \| | '_ \ / _` |
+ | (_| | | | | | | | | (_| |
+  \__, |_| |_|_|_| |_|\__,_|
+   __/ |                    
+  |___/                     
+
+gnina v1.0.1 HEAD:aa41230   Built Aug 25 2021.
+gnina is based on smina and AutoDock Vina.
+Please cite appropriately.
+
+Commandline: gnina -l ../CASF-2016/coreset/2ymd/2ymd_ligand_opt.mol2 -r ../CASF-2016/coreset/2ymd/2ymd_protein.pdb --autobox_ligand ../CASF-2016/coreset/2ymd/2ymd_ligand_opt.mol2 --score_only --cnn default_ensemble --seed 42
+## Name gauss(o=0,_w=0.5,_c=8) gauss(o=3,_w=2,_c=8) repulsion(o=0,_c=8) hydrophobic(g=0.5,_b=1.5,_c=8) non_dir_h_bond(g=-0.7,_b=0,_c=8) num_tors_div
+Affinity: -7.75638 (kcal/mol)
+CNNscore: 0.97968 
+CNNaffinity: 6.10133
+Intramolecular energy: -0.12465
+Term values, before weighting:
+## 2ymd_ligand 80.51341 910.72198 3.08428 30.24636 4.48359 0.00000
