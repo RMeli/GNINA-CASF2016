@@ -4,25 +4,27 @@
 
 data="../CASF-2016/power_scoring/CoreSet.dat"
 
-mkdir -p results
-
 scores="Affinity CNNscore CNNaffinity"
 
-for model in $(ls logs)
+for optname in "noopt" "amberopt" "vinaopt"
 do
-    for score in ${scores}
+    mkdir -p results/${optname}
+    for model in $(ls logs)
     do
-        echo ${model} ${score}
-
-        fout="results/${model}_${score}.dat"
-
-        echo "#code  score" > ${fout}
-        for system in $(tail -n +2 ${data} | awk '{print $1}')
+        for score in ${scores}
         do
-            flog="logs/${model}/${system}.log"
-            s=$(grep "^${score}:" ${flog} | awk '{print $2}')
+            echo ${optname} ${model} ${score}
 
-            echo "${system} ${s}" >> ${fout}
+            fout="results/${optname}/${model}_${score}.dat"
+
+            echo "#code  score" > ${fout}
+            for system in $(tail -n +2 ${data} | awk '{print $1}')
+            do
+                flog="logs/${optname}/${model}/${system}.log"
+                s=$(grep "^${score}:" ${flog} | awk '{print $2}')
+
+                echo "${system} ${s}" >> ${fout}
+            done
         done
     done
 done
