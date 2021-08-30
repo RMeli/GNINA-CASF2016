@@ -296,7 +296,7 @@ Template command for running the bootstrap in R program==========
 
 rm(list=ls());
 require(boot);
-data_all<-read.table("results/scoring/crossdock_default2018_CNNscore_processed_score",header=FALSE);
+data_all<-read.table("analysis/outputs/scoring/noopt/crossdock_default2018_CNNscore_processed_score",header=FALSE);
 aa<-c(1:nrow(data_all));
 
 mycore<-function(x,indices)
@@ -313,7 +313,7 @@ for(i in 1:285)
 };
 
 data.boot<-boot(aa,mycore,R=10000,stype="i",sim="ordinary");
-sink("results/scoring/crossdock_default2018_CNNscore-ci.results");
+sink("analysis/outputs/scoring/noopt/crossdock_default2018_CNNscore-ci.results");
 a<-boot.ci(data.boot,conf=0.9,type=c("bca"));
 print(a);
 sink();

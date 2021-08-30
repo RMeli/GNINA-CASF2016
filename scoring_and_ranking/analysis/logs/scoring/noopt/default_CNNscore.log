@@ -1,5 +1,5 @@
      code  logKa    score
-1    4llx   2.89      NaN
+1    4llx   2.89  0.84351
 2    5c28   5.66  0.73383
 3    3uuo   7.96  0.64925
 4    3ui7   9.00  0.63216
@@ -286,23 +286,23 @@
 285  1u1b   7.80  0.53238
 
 Summary of the scoring power: ===================================
-The regression equation: logKa = 3.13 + 3.93 * Score
-Number of favorable sample (N) = 284
-Pearson correlation coefficient (R) = 0.323
-Standard deviation in fitting (SD) = 2.05
+The regression equation: logKa = 3.12 + 3.92 * Score
+Number of favorable sample (N) = 285
+Pearson correlation coefficient (R) = 0.320
+Standard deviation in fitting (SD) = 2.06
 =================================================================
 
 Template command for running the bootstrap in R program==========
 
 rm(list=ls());
 require(boot);
-data_all<-read.table("results/scoring/default_CNNscore_processed_score",header=FALSE);
+data_all<-read.table("analysis/outputs/scoring/noopt/default_CNNscore_processed_score",header=FALSE);
 aa<-c(1:nrow(data_all));
 
 mycore<-function(x,indices)
 {
-data_1<-matrix(NA,284,2);
-for(i in 1:284)
+data_1<-matrix(NA,285,2);
+for(i in 1:285)
     {
         data_1[i,1]=data_all[x[indices][i],2];
         data_1[i,2]=data_all[x[indices][i],3];
@@ -313,7 +313,7 @@ for(i in 1:284)
 };
 
 data.boot<-boot(aa,mycore,R=10000,stype="i",sim="ordinary");
-sink("results/scoring/default_CNNscore-ci.results");
+sink("analysis/outputs/scoring/noopt/default_CNNscore-ci.results");
 a<-boot.ci(data.boot,conf=0.9,type=c("bca"));
 print(a);
 sink();

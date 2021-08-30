@@ -1,5 +1,5 @@
    Target Rank1 Rank2 Rank3 Rank4 Rank5
-1    5c2h  5c2h  5c28  3uuo  3ui7  4llx
+1    5c2h  5c2h  4llx  5c28  3uuo  3ui7
 2    3uri  3uri  3prs  3pww  2v00  3wz8
 3    4rfm  4rfm  4m0z  3qgy  4m0y  4qd6
 4    4ty7  4x6p  4crc  4cr9  4cra  4ty7
@@ -58,9 +58,9 @@
 57   1u1b  1w4o  3dxg  1u1b  1o0h  3d6q
 
 Summary of the ranking power: ===========================================
-The Spearman correlation coefficient (SP) = 0.321
-The Kendall correlation coefficient (tau) = 0.263
-The Predictive index (PI) = 0.322
+The Spearman correlation coefficient (SP) = 0.318
+The Kendall correlation coefficient (tau) = 0.260
+The Predictive index (PI) = 0.320
 =========================================================================
 
 
@@ -68,11 +68,11 @@ Template command for running the bootstrap in R program==================
 
 rm(list=ls());
 require(boot);
-data_all<-read.table("results/ranking/default_CNNscore_Spearman.results",header=FALSE);
+data_all<-read.table("analysis/outputs/ranking/noopt/default_CNNscore_Spearman.results",header=FALSE);
 data<-as.matrix(data_all[,2]);
 mymean<-function(x,indices) sum(x[indices])/57;
 data.boot<-boot(data,mymean,R=10000,stype="i",sim="ordinary");
-sink("results/ranking/default_CNNscore_Spearman-ci.results");
+sink("analysis/outputs/ranking/noopt/default_CNNscore_Spearman-ci.results");
 a<-boot.ci(data.boot,conf=0.9,type=c("bca"));
 print(a);
 sink();
