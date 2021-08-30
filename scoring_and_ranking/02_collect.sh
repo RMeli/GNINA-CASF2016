@@ -9,7 +9,7 @@ scores="Affinity CNNscore CNNaffinity"
 for optname in "noopt" "amberopt" "vinaopt"
 do
     mkdir -p results/${optname}
-    for model in $(ls logs)
+    for model in $(ls logs/${optname})
     do
         for score in ${scores}
         do
