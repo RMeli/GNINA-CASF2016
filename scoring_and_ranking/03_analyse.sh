@@ -5,8 +5,8 @@ data="../CASF-2016/power_scoring/CoreSet.dat"
 
 for power in "scoring" "ranking"
 do
-    mkdir -p analysis/${power}
-    mkdir -p results/${power}
+    mkdir -p analysis/logs/${power}
+    mkdir -p analysis/outputs/${power}
 
     for model in $(ls logs)
     do
