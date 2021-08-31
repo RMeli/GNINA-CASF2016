@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#!/bin/bash
-
 data="../CASF-2016/power_scoring/CoreSet.dat"
 
 scores="Affinity CNNscore CNNaffinity"
