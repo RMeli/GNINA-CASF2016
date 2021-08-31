@@ -22,9 +22,13 @@ Run CASF-2016 analysis scripts in order to compute the following metrics:
 * Kendall's correlation coefficient (ranking)
 * Predictive Index (ranking)
 
+Analysis output files are stored in `analysis/outputs/` while analysis log files (containing the metrics of interest as well as R scripts for bootstrapping)  are stored in `analysis/logs/`, for different optimisation methods (first subfolder level), and for different models and scoring methods (file names).
+
 ### `04_bootstrap.sh`
 
 Perform bootstrapping in [R](https://www.r-project.org/) to compute 90% confidence intervals.
+
+The results of bootstrapping are stored in `analysis/outputs/`, for different power tests (scoring and ranking, first subfolder level), for different optimisation methods (second subfolder level), and for different models and scoring methods (file names).
 
 ### `05_reports.sh`
 
