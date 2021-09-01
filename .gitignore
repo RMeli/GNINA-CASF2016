@@ -9,3 +9,6 @@ scoring/logs
 
 # singularity
 *.sif
+
+# editors
+.vscode
